@@ -15,13 +15,15 @@ Deploy on Vercel as a static site (Framework: Other, no build command).
 | `index.html` | Page structure |
 | `css/style.css` | The whole design (green, cream, the red apostrophe) |
 | `js/menu-data.js` | **The menu**: 12 categories, 74 items, prices, choices, burger layers. Edit prices here |
-| `js/app.js` | Everything that moves: intro, 3D hero, X-ray burger, product sheet, cart, checkout, search |
+| `js/app.js` | Everything that moves: the 3D burger renderer and intro, X-ray burger, product sheet, cart, checkout, search |
 | `assets/menu/<id>.webp` | 68 product photos cut from Soubra's QR menu (95 px) |
 | `assets/brand/` | Two of their Instagram posts (ring box, ghost) |
 
+Performance: scrolling holds 60 fps even without a GPU (measured in headless Chrome). The burger only animates while the hero is on screen.
+
 ## What the site does
-1. **Intro:** the green velvet ring box from their own post drops in, opens to "Want to have a burger with me?" and a burger pops up. Once per visit; tap to skip.
-2. **3D hero:** a Soubra's Classic built from 10 real layers tilts with the mouse. On computers the hero stays pinned while you scroll and the burger explodes into labeled layers ("140g beef", "Special mustard"…), then "10 layers. One bite." slides in with an order button. On phones it comes apart and back together on a loop; tap to hold it open.
+1. **Intro:** the Soubra's Classic builds itself: 10 layers fall from the sky one by one and land with a squash, the patty and the top bun shake the camera, "Soubra's" writes itself on, the "Since 1982" stamp slams down and the burger glides into place. Once per visit; tap or press a key to skip.
+2. **3D hero:** a real 3D burger drawn on a canvas (`Burger3D` in `app.js`): glossy dome bun, cheese slice with drooping corners, textured patty, ruffled iceberg, tomato slices, pickles, grilled onion, sauces, steam and floating ingredients. It spins and leans with the mouse. On computers the hero stays pinned while you scroll: the burger turns a full circle, explodes into a numbered tower with labels, "10 layers. One bite." slides in, then everything slams back together. On phones it comes apart and back together on a loop; tap to hold it open.
 3. **Ticker** with their own lines ("Ghost your ex, not your fav restaurant", "Want to have a burger with me?") that speeds up and leans with your scroll.
 4. **Menu:** sticky category bar, 3D tilt cards, featured green cards for the Big Soubra's meals, Signature and Spicy tags.
 5. **Product sheet:** every burger and sub opens as an **X-ray** of its layers. Tap an ingredient to take it out and its layer slides away. Choices (BBQ or Buffalo, beef or escalope, Pepsi / Miranda / 7UP), a note, quantity, live price. Edit any line from the cart.

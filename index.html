@@ -18,29 +18,10 @@
 var calm=m&&m("(prefers-reduced-motion: reduce)").matches;
 if(!calm&&m&&m("(min-width: 960px) and (min-height: 620px)").matches)r.classList.add("staged");
 var seen=false;try{seen=sessionStorage.getItem("soubras-intro")==="1";}catch(e){}
-if(calm||seen||location.hash)r.classList.add("no-intro","ready");})();
+if(calm||seen||location.hash)r.classList.add("no-intro","ready","written");})();
 </script>
 </head>
 <body>
-
-<!-- Intro: the velvet ring box from Soubra's own post opens with a burger inside -->
-<div class="intro" id="intro" aria-hidden="true">
-  <div class="rb-scene">
-    <div class="rb" id="rb">
-      <div class="rb-face rb-back"></div>
-      <div class="rb-face rb-left"></div>
-      <div class="rb-face rb-right"></div>
-      <div class="rb-face rb-top"></div>
-      <div class="rb-burger" id="rb-burger"></div>
-      <div class="rb-face rb-front"><span class="rb-clasp"></span></div>
-      <div class="rb-lid">
-        <div class="lid-in"><p>Want to have<br>a burger with me?</p><svg viewBox="0 0 40 34" aria-hidden="true"><path d="M20 31 C6 21 2 15 2 9.5 C2 5 5.5 2 9.6 2 C13.4 2 16.4 4.4 20 8.4 C23.6 4.4 26.6 2 30.4 2 C34.5 2 38 5 38 9.5 C38 15 34 21 20 31Z" fill="none" stroke="#e23d2c" stroke-width="2.6" stroke-linejoin="round"/></svg></div>
-        <div class="lid-out"><span>Soubra<i>’</i>s</span></div>
-      </div>
-    </div>
-  </div>
-  <button class="intro-yes" id="intro-yes" type="button" tabindex="-1">Yes, obviously</button>
-</div>
 
 <a class="skip" href="#menu">Skip to the menu</a>
 
@@ -64,14 +45,24 @@ if(calm||seen||location.hash)r.classList.add("no-intro","ready");})();
 <section class="hero" id="top" aria-labelledby="hero-title">
   <div class="stick" id="stick">
     <div class="light" aria-hidden="true"></div>
+    <div class="bgword" id="bgword" aria-hidden="true"><span>SOUBRA'S</span><span>SOUBRA'S</span><span>SOUBRA'S</span></div>
+    <canvas class="burger" id="burger" aria-hidden="true"></canvas>
+    <p class="sr">Illustration: the Soubra's Classic burger, built layer by layer.</p>
+    <div class="tags3d" id="tags3d" aria-hidden="true"></div>
+    <div class="stamp" id="stamp" aria-hidden="true"><svg viewBox="0 0 120 120"><defs><path id="stamp-c" d="M60 60 m-44 0 a44 44 0 1 1 88 0 a44 44 0 1 1 -88 0"/></defs><circle cx="60" cy="60" r="57"/><circle cx="60" cy="60" r="50" class="in"/><text><textPath href="#stamp-c" startOffset="0">SINCE 1982 &#183; SAIDA &#183; SAVOR THE FLAVOR &#183;</textPath></text><text class="big" x="60" y="70" text-anchor="middle">82</text></svg></div>
+    <p class="hand bnote" id="bnote" aria-hidden="true">want to have a burger with me?</p>
+    <div class="burger-zone" aria-hidden="true"></div>
     <div class="wrap hero-grid">
       <div class="hero-copy" id="hero-copy">
-        <p class="eyebrow">Since 1982 &middot; Saida</p>
-        <h1 id="hero-title" aria-label="Soubra's. Savor the flavor."><span class="word" aria-hidden="true"><span>S</span><span>o</span><span>u</span><span>b</span><span>r</span><span>a</span><i>’</i><span>s</span></span><span class="savor" aria-hidden="true">Savor the flavor.</span></h1>
-        <p class="lede">Burgers, shawarma, crispy chicken, subs and steaks by Majed Soubra. Make every burger yours, then send your order on WhatsApp.</p>
+        <p class="eyebrow">Since 1982 &middot; Saida &middot; by Majed Soubra</p>
+        <h1 id="hero-title" aria-label="Soubra's. Savor the flavor.">
+          <svg class="wm" viewBox="0 0 640 210" aria-hidden="true"><text x="6" y="160">Soubra<tspan class="ap">&#8217;</tspan>s</text></svg>
+          <span class="savor" aria-hidden="true"><span>Savor</span> <span>the</span> <span>flavor.</span></span>
+        </h1>
+        <p class="lede">Burgers, shawarma, crispy chicken, subs and steaks. Make every burger yours, then send your order on WhatsApp.</p>
         <div class="cta">
           <a class="btn btn-red" href="#menu">Order now</a>
-          <button class="btn btn-ghost" type="button" data-open="soubras-classic">Meet the Classic</button>
+          <button class="btn btn-ghost" type="button" data-open="soubras-classic">Build the Classic</button>
         </div>
         <ul class="facts">
           <li><b>1982</b><span>since</span></li>
@@ -79,16 +70,7 @@ if(calm||seen||location.hash)r.classList.add("no-intro","ready");})();
           <li><b>140g</b><span>premium beef</span></li>
         </ul>
       </div>
-      <div class="hero-burger" id="hb">
-        <div class="hb-scene" id="hb-scene">
-          <svg class="steam" viewBox="0 0 200 120" aria-hidden="true"><path d="M60 118 C40 90 80 76 60 48 C44 26 70 14 64 0"/><path d="M100 118 C80 88 122 74 100 44 C84 22 110 12 104 0"/><path d="M140 118 C122 92 160 78 140 50 C126 30 150 16 144 2"/></svg>
-          <div class="stack3d" id="stack3d" role="img" aria-label="Illustration of the Soubra's Classic burger, layer by layer"></div>
-        </div>
-        <div class="hb-shadow" id="hb-shadow"></div>
-        <p class="hand hb-note" id="hb-note">psst&hellip; scroll and watch it come apart</p>
-      </div>
     </div>
-
     <div class="score" id="score">
       <p class="eyebrow">The Soubra's Classic</p>
       <h2>10 layers.<span>One bite.</span></h2>
