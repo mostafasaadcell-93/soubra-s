@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Soubra's · Savor the Flavor · Saida since 1982</title>
+<meta name="description" content="Soubra's menu: burgers, shawarma, fried and grilled chicken, subs, wraps, platters and steaks. Customize your order and send it on WhatsApp. Saida, since 1982.">
+<!-- Concept demo: remove this line when Soubra's approves the site and it goes live as theirs -->
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#0d3f31">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%230d3f31'/%3E%3Ctext x='31' y='45' text-anchor='middle' font-family='Georgia,serif' font-style='italic' font-weight='700' font-size='38' fill='%23f6efe1'%3ES%3C/text%3E%3Ccircle cx='47' cy='17' r='5' fill='%23e23d2c'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Montserrat:wght@400;500;600;700;800;900&family=Yellowtail&display=swap">
+<link rel="stylesheet" href="css/style.css">
+<script>
+(function(){var r=document.documentElement,m=window.matchMedia;r.classList.add("js");
+var calm=m&&m("(prefers-reduced-motion: reduce)").matches;
+if(!calm&&m&&m("(min-width: 960px) and (min-height: 620px)").matches)r.classList.add("staged");
+var seen=false;try{seen=sessionStorage.getItem("soubras-intro")==="1";}catch(e){}
+if(calm||seen||location.hash)r.classList.add("no-intro","ready");})();
+</script>
+</head>
+<body>
+
+<!-- Intro: the velvet ring box from Soubra's own post opens with a burger inside -->
+<div class="intro" id="intro" aria-hidden="true">
+  <div class="rb-scene">
+    <div class="rb" id="rb">
+      <div class="rb-face rb-back"></div>
+      <div class="rb-face rb-left"></div>
+      <div class="rb-face rb-right"></div>
+      <div class="rb-face rb-top"></div>
+      <div class="rb-burger" id="rb-burger"></div>
+      <div class="rb-face rb-front"><span class="rb-clasp"></span></div>
+      <div class="rb-lid">
+        <div class="lid-in"><p>Want to have<br>a burger with me?</p><svg viewBox="0 0 40 34" aria-hidden="true"><path d="M20 31 C6 21 2 15 2 9.5 C2 5 5.5 2 9.6 2 C13.4 2 16.4 4.4 20 8.4 C23.6 4.4 26.6 2 30.4 2 C34.5 2 38 5 38 9.5 C38 15 34 21 20 31Z" fill="none" stroke="#e23d2c" stroke-width="2.6" stroke-linejoin="round"/></svg></div>
+        <div class="lid-out"><span>Soubra<i>’</i>s</span></div>
+      </div>
+    </div>
+  </div>
+  <button class="intro-yes" id="intro-yes" type="button" tabindex="-1">Yes, obviously</button>
+</div>
+
+<a class="skip" href="#menu">Skip to the menu</a>
+
+<header class="top" id="hdr">
+  <div class="wrap top-in">
+    <a class="brand" href="#top" aria-label="Soubra's, back to top"><span class="word">Soubra<i>’</i>s</span><small>since 1982</small></a>
+    <nav class="nav" aria-label="Main">
+      <a href="#menu">Menu</a>
+      <a href="#story">Our story</a>
+      <a href="#visit">Visit</a>
+    </nav>
+    <div class="top-act">
+      <button class="icon-btn" id="top-search" type="button" aria-label="Search the menu"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.6-3.6"/></svg></button>
+      <button class="icon-btn bag" id="top-cart" type="button" aria-label="Your order, 0 items"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8"/></svg><b id="top-n" hidden>0</b></button>
+    </div>
+  </div>
+  <span class="mprog" id="mprog" aria-hidden="true"></span>
+</header>
+
+<main id="main">
+<section class="hero" id="top" aria-labelledby="hero-title">
+  <div class="stick" id="stick">
+    <div class="light" aria-hidden="true"></div>
+    <div class="wrap hero-grid">
+      <div class="hero-copy" id="hero-copy">
+        <p class="eyebrow">Since 1982 &middot; Saida</p>
+        <h1 id="hero-title" aria-label="Soubra's. Savor the flavor."><span class="word" aria-hidden="true"><span>S</span><span>o</span><span>u</span><span>b</span><span>r</span><span>a</span><i>’</i><span>s</span></span><span class="savor" aria-hidden="true">Savor the flavor.</span></h1>
+        <p class="lede">Burgers, shawarma, crispy chicken, subs and steaks by Majed Soubra. Make every burger yours, then send your order on WhatsApp.</p>
+        <div class="cta">
+          <a class="btn btn-red" href="#menu">Order now</a>
+          <button class="btn btn-ghost" type="button" data-open="soubras-classic">Meet the Classic</button>
+        </div>
+        <ul class="facts">
+          <li><b>1982</b><span>since</span></li>
+          <li><b id="fact-items">74</b><span>things to eat</span></li>
+          <li><b>140g</b><span>premium beef</span></li>
+        </ul>
+      </div>
+      <div class="hero-burger" id="hb">
+        <div class="hb-scene" id="hb-scene">
+          <svg class="steam" viewBox="0 0 200 120" aria-hidden="true"><path d="M60 118 C40 90 80 76 60 48 C44 26 70 14 64 0"/><path d="M100 118 C80 88 122 74 100 44 C84 22 110 12 104 0"/><path d="M140 118 C122 92 160 78 140 50 C126 30 150 16 144 2"/></svg>
+          <div class="stack3d" id="stack3d" role="img" aria-label="Illustration of the Soubra's Classic burger, layer by layer"></div>
+        </div>
+        <div class="hb-shadow" id="hb-shadow"></div>
+        <p class="hand hb-note" id="hb-note">psst&hellip; scroll and watch it come apart</p>
+      </div>
+    </div>
+
+    <div class="score" id="score">
+      <p class="eyebrow">The Soubra's Classic</p>
+      <h2>10 layers.<span>One bite.</span></h2>
+      <p>140g of premium beef, cheddar, special mustard, dill pickles, iceberg, grilled onion, grilled tomato and cocktail sauce, between two toasted buns.</p>
+      <div class="score-row"><b class="price">$7.50</b><button class="btn btn-red" type="button" data-open="soubras-classic">Make it mine</button></div>
+    </div>
+    <a class="cue" id="cue" href="#menu" aria-label="Scroll to the menu"><span aria-hidden="true"></span></a>
+  </div>
+</section>
+
+<div class="ticker" id="ticker" aria-hidden="true"><div class="track" id="track"></div></div>
+
+<section class="menu" id="menu" aria-labelledby="menu-title">
+  <div class="wrap menu-head">
+    <p class="eyebrow">The menu</p>
+    <h2 class="h2" id="menu-title">What are we eating?</h2>
+    <p class="hand">tap anything to make it yours</p>
+    <button class="bigsearch" id="bigsearch" type="button">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.6-3.6"/></svg>
+      <span id="ph">Search the menu</span><kbd aria-hidden="true">/</kbd>
+    </button>
+  </div>
+  <nav class="cats" id="cats" aria-label="Menu categories"><div class="cats-in" id="cats-in"></div></nav>
+  <div class="wrap" id="sections"></div>
+  <noscript><p class="wrap">Turn on JavaScript to see the menu and order, or call 78 700 690.</p></noscript>
+</section>
+
+<section class="story" id="story" aria-labelledby="story-title">
+  <div class="wrap story-in">
+    <div class="story-big" aria-hidden="true"><span id="yr">1982</span></div>
+    <div class="story-copy">
+      <p class="eyebrow">Our story</p>
+      <h2 class="h2" id="story-title">Savor the flavor.</h2>
+      <p class="lede">Soubra's has been feeding Saida since 1982. Today it is Majed Soubra's kitchen on Houssam El Deen Rafic Hariri Street: burgers, shawarma, crispy chicken, subs and steaks, made to order.</p>
+      <ul class="pillars">
+        <li class="reveal"><b>140g</b><span>of premium beef in every beef burger</span></li>
+        <li class="reveal" style="--d:1"><b>250g</b><span>of MB2+ Australian black angus in the Majesty Steak</span></li>
+        <li class="reveal" style="--d:2"><b>300g</b><span>of char-grilled tawouk on the Tawouk Platter</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="gram" id="gram" aria-labelledby="gram-title">
+  <div class="wrap">
+    <p class="eyebrow">Straight from @soubraslb</p>
+    <h2 class="h2" id="gram-title">We don't take ourselves too seriously.</h2>
+    <div class="polas">
+      <figure class="pola reveal" style="--r:-4deg"><img src="assets/brand/ringbox.webp" alt="A Soubra's burger inside a green velvet ring box with the note: Want to have a burger with me?" width="548" height="686" loading="lazy" decoding="async"><figcaption class="hand">the proposal</figcaption></figure>
+      <figure class="pola reveal" style="--r:3deg;--d:1"><img src="assets/brand/ghost.webp" alt="Someone dressed as a ghost in front of Soubra's holding a sign: Ghost your ex, not your fav restaurant" width="540" height="681" loading="lazy" decoding="async"><figcaption class="hand">priorities</figcaption></figure>
+    </div>
+    <a class="btn btn-green" id="ig-link" href="https://www.instagram.com/soubraslb/" target="_blank" rel="noopener">Follow @soubraslb</a>
+  </div>
+</section>
+
+<section class="visit" id="visit" aria-labelledby="visit-title">
+  <div class="wrap visit-in">
+    <div>
+      <p class="eyebrow">Visit</p>
+      <h2 class="h2" id="visit-title">Come hungry.</h2>
+      <p class="lede">Houssam El Deen Rafic Hariri St., Saida. Pick up, eat in, or let us bring it to you.</p>
+      <div class="visit-btns">
+        <a class="btn btn-red" id="map-link" href="#" target="_blank" rel="noopener">Open in Google Maps</a>
+        <a class="btn btn-ghost-d" href="tel:+96178700690">Call 78 700 690</a>
+      </div>
+    </div>
+    <ul class="visit-list">
+      <li><small>Phone</small><a href="tel:+96178700690">78 700 690</a></li>
+      <li><small>Phone</small><a href="tel:+96181550045">81 55 00 45</a></li>
+      <li><small>Instagram</small><a href="https://www.instagram.com/soubraslb/" target="_blank" rel="noopener">@soubraslb</a></li>
+      <li><small>Address</small><span>Houssam El Deen Rafic Hariri St., Saida</span></li>
+    </ul>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-in">
+    <span class="word">Soubra<i>’</i>s</span>
+    <p>Savor the flavor &middot; Saida since 1982 &middot; by Majed Soubra</p>
+    <p class="demo">Concept demo &middot; not the official Soubra's website</p>
+  </div>
+</footer>
+
+<!-- floating order button -->
+<button class="fab" id="fab" type="button" hidden>
+  <span class="fab-bag"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8"/></svg><b id="fab-n">0</b></span>
+  <span class="fab-txt">View order</span><span class="fab-t" id="fab-t">$0</span>
+</button>
+
+<div class="scrim" id="scrim" hidden></div>
+
+<!-- product sheet -->
+<aside class="sheet" id="sheet" role="dialog" aria-modal="true" aria-labelledby="sh-name" hidden>
+  <button class="x" id="sh-close" type="button" aria-label="Close">&times;</button>
+  <div class="sh-scroll">
+    <div class="sh-stage" id="sh-stage"><div class="light" aria-hidden="true"></div></div>
+    <div class="sh-body">
+      <p class="sh-cat" id="sh-cat"></p>
+      <h3 id="sh-name"></h3>
+      <p class="sh-price" id="sh-price"></p>
+      <p class="sh-desc" id="sh-desc"></p>
+      <div id="sh-opts"></div>
+      <div id="sh-inside"></div>
+      <label class="lbl" for="sh-note">Anything else?</label>
+      <textarea class="input" id="sh-note" rows="2" maxlength="160" placeholder="Extra crispy? Sauce on the side?"></textarea>
+    </div>
+  </div>
+  <div class="sh-foot">
+    <div class="qty"><button type="button" id="sh-minus" aria-label="One less">&minus;</button><output id="sh-qty" aria-live="polite">1</output><button type="button" id="sh-plus" aria-label="One more">+</button></div>
+    <button class="btn btn-red sh-add" id="sh-add" type="button"><span id="sh-add-l">Add to order</span><span class="sh-total" id="sh-total"></span></button>
+  </div>
+</aside>
+
+<!-- cart -->
+<aside class="drawer" id="cart" role="dialog" aria-modal="true" aria-labelledby="cart-title" hidden>
+  <div class="dr-head"><h3 id="cart-title">Your order</h3><button class="x" id="cart-close" type="button" aria-label="Close">&times;</button></div>
+  <div class="steps" id="steps"></div>
+  <div class="dr-body" id="dr-body"></div>
+  <div class="dr-foot" id="dr-foot"></div>
+</aside>
+
+<!-- search -->
+<div class="search" id="search" role="dialog" aria-modal="true" aria-label="Search the menu" hidden>
+  <div class="s-panel">
+    <div class="s-box">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.6-3.6"/></svg>
+      <input id="sq" type="search" placeholder="Burger, honey, spicy, under $8…" autocomplete="off" spellcheck="false" aria-controls="sres" aria-autocomplete="list">
+      <button class="s-esc" id="s-close" type="button">Esc</button>
+    </div>
+    <div class="s-chips" id="s-chips"></div>
+    <ul class="sres" id="sres" role="listbox" aria-label="Results"></ul>
+  </div>
+</div>
+
+<div class="toast" id="toast" role="status"></div>
+<div class="sr" id="live" aria-live="polite"></div>
+
+<script src="js/menu-data.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
